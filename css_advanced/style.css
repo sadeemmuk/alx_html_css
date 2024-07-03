@@ -1,0 +1,413 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+/* Start variables */
+:root {
+    --main_color:#C271FF;
+    --blue_color:#071629;
+    
+}
+/*End variables*/
+
+/* Global rules*/
+* {
+    box-sizing: border-box;
+    font-family:  "Source Sans 3", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* End global rules*/
+
+body{
+    height: 100vh;
+    background-color:gainsboro;
+    width: 100%;
+}
+
+header {
+width: 100%;
+padding-bottom: 30px;
+background-attachment:fixed;
+background-image: url(/CSS\ Advanced/Object.gif.png);
+}
+
+
+
+
+header nav {
+    
+    padding-top: 20px;
+    align-items: center;
+    display: flex;
+    margin-left: 70px;
+    margin-right: 70px;
+    justify-content: space-between;
+    
+}
+
+header nav ul {
+    list-style: none;
+    width: 234px;
+}
+
+header nav ul li{
+    display: inline;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    font-size: 16;
+    color: white;
+    margin-right: 7px;
+    
+}
+
+main {
+    background-image: url(CSS\ Advanced/Object.gif.png);
+}
+
+main .sec_one {
+    
+}
+main .sec_one .one {
+    text-align: center;
+    
+   
+
+}
+
+main .sec_one h1 {
+    font-size: 120px;
+    color: white;
+    margin-top: 0;
+    margin-bottom: 0;
+    
+}
+
+main .sec_one span {
+    font-size: 16px;
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+
+main .sec_one button {
+    background-color: var(--main_color);
+    border-radius: 20px;
+    border: none;
+    padding: 15px;
+    box-shadow: 0 2px 20px 0 #000000;
+    color: white;
+    font-weight: normal;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+section .new_title h3 {
+    text-align: center;
+    margin-top: 80px;
+    font-size: 32px;
+    font-weight: normal;
+    color: white;
+} 
+
+section .new_title h3 span{
+    color: var(--main_color);
+    font-size: 32px;
+    font-weight: normal;
+}
+
+.sec_one .testmilone{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 70px;
+    align-items: center;
+    padding-top: 40px;
+    align-items: center;
+}
+
+.sec_one .testmilone div h3, p {
+color: white;
+text-align: center;
+
+}
+
+.sec_one .testmilone div img {
+    border-radius: 50%;
+    width: 150px;
+}
+
+main .sec_two {
+    height: 392px;
+    background-color: var(--main_color);
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+main .sec_two img {
+        width: 160px;
+        height: 160px;
+}
+
+main .sec_two div {
+    width: 730px;
+    height: 158px;
+    margin-left: 45px;
+   
+}
+
+main .sec_two div blockquote{
+    font-size: 22px;
+    font-weight: normal;
+    color: white;
+    text-align: left;
+}
+
+main .sec_two div h3 {
+    text-align: left;
+    padding-left: px;
+    margin-top: 15px;
+}
+
+main .sec_two div p {
+    text-align: left;
+    margin-top: 10px;
+
+    
+}
+
+main .sec_third {
+    background-color: white;
+    width: 100%;
+}
+
+main .sec_third h3 {
+    text-align: center;
+    padding-top: 50px;
+    font-weight: normal;
+    font-size: 32px;
+    padding-bottom: 80px;
+    }
+
+    main .sec_third h3 span {
+        color: #C271FF;
+    }
+
+    main .sec_third .table {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        
+    }
+    main .sec_third .table div {
+        width: 255px;
+        margin-bottom: 10px;
+        
+    }
+    main .sec_third .table div img {
+        width: 255px;
+    }
+
+    main .sec_third .table div h3 {
+        font-size: 16px;
+        text-align: left;
+        margin-top: -15px;
+        font-weight: bold;
+    }
+
+    main .sec_third .table div p {
+        font-size: 14px;
+        color: gainsboro;
+        margin-top: -60px;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    main .sec_third .table div .person {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    main .sec_third .table div .person img {
+        width: 30px;
+    } 
+
+    main .sec_third .table div .person h4{
+        color: var(--main_color);
+        font-size: 14px;
+        margin-left: 10px;
+    }
+
+    main .sec_third .table .rating {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+    main .sec_third .table .rating div img {
+        width: 107px;
+        padding-top: 10px;
+    }
+    main .sec_third .table .rating p {
+        align-self: flex-end;
+        font-size: 14px;
+        margin-top: 10px;
+    }
+
+    main .sec_four {
+        height: 502px;
+        width: 100%;
+        background-color: var(--blue_color);
+        text-align: center;
+
+    }
+
+main .sec_four h2 {
+    text-align: center;
+    padding-top: 30px;
+    font-weight: normal;
+    color: white;
+    font-size: 32px;
+
+}
+main .sec_four h2 span {
+    color: var(--main_color);
+    font-size: 32px;
+    font-weight: 600;
+}
+
+main .sec_four div {
+    display: flex;
+    padding: 30px;
+}
+
+main .sec_four div div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    
+   
+
+}
+
+main .sec_four div div img {
+    width: 43px;
+    height: 35px;
+    margin-bottom: 15px;
+}
+
+main .sec_four div div h3 {
+color: white;
+margin-bottom: 10px;
+}
+
+main .sec_four div div p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+main .sec_four button {
+    background-color: var(--main_color);
+    border-radius: 20px;
+    border: none;
+    padding: 15px;
+    box-shadow: 0 2px 20px 0 #000000;
+    color: white;
+    font-weight: normal;
+    font-size: 14px;
+    margin-top: -15px;
+    
+}
+
+main .sec_five {
+    background-color: white;
+    padding: 10px;
+    height: 707px;
+}
+
+main .sec_five h1 {
+    text-align: center;
+    font-size: 60px;
+    font-weight: normal;
+}
+
+main .sec_five div div div p {
+    color: black;
+}
+
+main .sec_five div {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+main .sec_five div div {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 242px;
+    margin-top: 15px;
+   
+    
+    
+    
+}
+
+main .sec_five div div h3 {
+text-align: left;
+margin-bottom: 20px;
+}
+
+main .sec_five div div div p {
+    color:#071629 50.16%;
+    text-align: left;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px 30px;
+    height: 249px;
+    background-color: var(--blue_color);
+}
+
+footer .smile {
+ width: 169px;   
+ align-self: center;
+}
+footer .smile div img {
+width: 169px;
+}
+
+footer .social_media {
+    order: 2;
+    align-self: center;
+}
+
+footer .social_media ul {
+    list-style: none;
+    margin-right: 50px;
+}
+
+footer .social_media ul li a {
+    text-decoration: none;
+
+}
+
+footer p {
+    align-self: flex-end;
+    color: #FFFFFF;
+    font-size: 12px;
+}
+
+
+
+

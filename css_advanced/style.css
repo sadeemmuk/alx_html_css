@@ -17,7 +17,7 @@
 /* End global rules*/
 
 body{
-    height: 100vh;
+    height: 100%;
     background-color:gainsboro;
     width: 100%;
 }
@@ -26,7 +26,9 @@ header {
 width: 100%;
 padding-bottom: 30px;
 background-attachment:fixed;
-background-image: url(/CSS\ Advanced/Object.gif.png);
+position: absolute;
+z-index: 1;
+
 }
 
 
@@ -60,13 +62,17 @@ header nav ul li a {
     
 }
 
-main {
-    background-image: url(CSS\ Advanced/Object.gif.png);
-}
+
 
 main .sec_one {
-    
+    background-image: url(CSS\ Advanced/Object.gif.png) ;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 90px;
+
 }
+
 main .sec_one .one {
     text-align: center;
     
@@ -78,6 +84,7 @@ main .sec_one h1 {
     font-size: 120px;
     color: white;
     margin-top: 0;
+    padding-top: 150px;
     margin-bottom: 0;
     
 }
@@ -140,7 +147,6 @@ text-align: center;
 main .sec_two {
     height: 392px;
     background-color: var(--main_color);
-    margin-top: 50px;
     display: flex;
     align-items: center;
     text-align: center;
@@ -155,7 +161,6 @@ main .sec_two img {
 
 main .sec_two div {
     width: 730px;
-    height: 158px;
     margin-left: 45px;
    
 }
@@ -183,6 +188,7 @@ main .sec_two div p {
 main .sec_third {
     background-color: white;
     width: 100%;
+    padding-bottom: 90px;
 }
 
 main .sec_third h3 {
@@ -199,30 +205,60 @@ main .sec_third h3 {
 
     main .sec_third .table {
         display: flex;
-        justify-content: space-around;
         align-items: center;
+        justify-content: center;
+        width: 70%;
+        margin: auto;
+       
         
     }
     main .sec_third .table div {
         width: 255px;
         margin-bottom: 10px;
-        
+        margin-right: 25px;
     }
     main .sec_third .table div img {
         width: 255px;
+        
+    
+        
+       
+    }
+
+    main .sec_third .table div h3::before{
+        content: "";
+        padding: 30px;
+        position: absolute;
+        border-radius: 50%;
+        background-color: #FFFFFF;
+        opacity: 0.9;
+        top: -90px;
+        right: 110px;
+    }
+
+    main .sec_third .table div h3::after{
+        content: "";
+        position: absolute;
+        border: 12px solid;
+        border-color: transparent transparent transparent var(--main_color);
+        opacity: 0.9;
+        top: -72px;
+        border-radius: 2px;
+        right: 120px;
     }
 
     main .sec_third .table div h3 {
         font-size: 16px;
         text-align: left;
-        margin-top: -15px;
+        margin-top: -40px;
         font-weight: bold;
+        position: relative;
     }
 
     main .sec_third .table div p {
         font-size: 14px;
         color: gainsboro;
-        margin-top: -60px;
+        margin-top: -70px;
         text-align: left;
         margin-bottom: 10px;
     }
@@ -256,6 +292,8 @@ main .sec_third h3 {
         align-self: flex-end;
         font-size: 14px;
         margin-top: 10px;
+        width: 50px;
+        color: var(--main_color);
     }
 
     main .sec_four {
@@ -382,6 +420,7 @@ footer {
 footer .smile {
  width: 169px;   
  align-self: center;
+ margin-left: 50px;
 }
 footer .smile div img {
 width: 169px;
@@ -395,6 +434,16 @@ footer .social_media {
 footer .social_media ul {
     list-style: none;
     margin-right: 50px;
+
+}
+
+footer .social_media ul li {
+    color: var(--blue_color);
+    background-color: white;
+    text-align: center;
+    border-radius: 50%;
+    padding: 5px;
+    margin: 5px;
 }
 
 footer .social_media ul li a {

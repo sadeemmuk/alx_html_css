@@ -1,0 +1,166 @@
+:root {
+    --colorOne:#FF6565;
+    --colortWO: #FFFFFF;
+    --colorThree:#071629;
+    --paddingTop:20px;
+    --paddingBottom:20px;
+    }
+    
+    
+    /*-----------------------general rules-----------------------*/
+     *, *::before, *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+     }
+    
+     body {
+        font-family: "Source Sans 3", sans-serif;
+        height: 100vh;
+     }
+    
+    main {
+        width: 100%;
+        
+    }
+
+    /*------------------------------------------------Section Three-------------------------------------------*/
+
+main .section_three {
+    width: 100%;
+    background-image: url(/d1597894d79386c83b9b/images/headphones_hero_2.jpg);
+    background-size: cover;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+main .section_three .heading{
+    margin: auto;
+    text-align: center;
+    color: var(--colortWO);
+    max-width: 637px;
+    padding-top: 30px;
+}
+
+main .section_three .heading h1 {
+font-size: 32px;
+font-weight: normal;
+margin-bottom: 30px;
+
+}
+
+main .section_three .heading p {
+    font-size: 16px;
+}
+
+main .section_three .box {
+    display: flex;
+    width: 85%;
+    margin: auto;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+main .section_three .box .rect {
+    position: relative;
+    width: 153px;
+    box-sizing: content-box;
+    border-width: 114px 19px 0px;
+    border-style: solid;
+    border-color: var(--colorOne) transparent;
+    
+}
+
+
+main .section_three .box .rect::before {
+    content: ""; 
+    position: absolute;
+     height: 0; 
+     width: 0; 
+     top: -173px; 
+     left: -19px;
+      border-width: 0 96px 60px; 
+      border-style: solid; 
+      border-color: transparent transparent var(--colorOne);
+}
+
+main .section_three .box .rect h1 {
+    position: absolute;
+     top: -105px;
+      left: 47px;
+      color: var(--colortWO);
+}
+
+main .section_three .box .rect p {
+    position: absolute;
+    top: -65px;
+    left: 9px;
+    color: var(--colortWO);
+}
+
+@media (max-width:950px){
+
+
+    .section_three{
+        width: fit-content;
+        height: 1491px;    
+    }
+
+    main .section_three .box {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto;
+        width: 420px;
+        padding-top: 80px;
+        gap: 70px;
+        justify-content: center;
+    }
+
+    main .section_three .box .rect {
+        margin-top: 15px;
+    }
+
+    
+    main .section_three .heading h1{
+font-size: 32px;
+
+margin-left: auto;
+margin-right: auto;
+    }
+    main .section_three .heading p {
+        font-size: 16px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 637px;
+    }
+}
+
+@media (max-width:480px){
+    main .section_three {
+      width: 100%;
+      height: 1491px;
+      background-position-x: center;
+      background-attachment: fixed;
+    }
+    main .section_three .heading {
+        padding: 10px;
+        margin-bottom: 15px;
+        }
+    main .section_three .heading h1 {
+        font-size: 32px;
+    }
+    main .section_three .heading p {
+        width: 305px;
+    }
+    main .section_three .box {
+        display: flex;
+        flex-direction: column;
+        padding-top: 5px;
+        align-items: center;
+        width: 100%;        
+    }
+}
+
+/*----------------------------------------------------Section three end---------------------------------------------------------*/
